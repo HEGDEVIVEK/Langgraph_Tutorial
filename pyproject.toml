@@ -1,0 +1,24 @@
+[project]
+name = "langgraph-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vivek Hegde", email = "vivekshegde2001@example.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "arxiv<4",
+    "dotenv>=0.9.9",
+    "langchain>=1.4.2",
+    "langchain-core>=1.6.4",
+    "langchain-openai>=1.6.5",
+    "langgraph>=1.2.12",
+]
+
+[project.scripts]
+langgraph-tutorial = "langgraph_tutorial:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
